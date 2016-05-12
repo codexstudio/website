@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="styles.css" />
-		<title>Codex | Lome</title>
+		<title>Codex | Home</title>
 	</head>
 	
 	<body class="home" onload="next(),scrolltobot()">

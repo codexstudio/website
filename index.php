@@ -18,14 +18,16 @@
 		}
 	?>
 	<div id="loginBox">
-		<?php echo '<form action="validate.php" method="post">
-			<input class="textboxes" id="keyInput" type="password" name="key" placeholder="Key"></input>	
-			<input id="submit" type="submit" value="LOGIN"></input>	
-		</form>' ?>
+		<form action="validate.php" method="post">
+			<input class="textboxes" id="idInput" type="password" name="key" placeholder="ID"></input>
+			<input class="textboxes" id="secretInput" type="password" name="secret" placeholder="Secret"></input>
+			<input id="submit" type="submit" value="Login"></input>	
+		</form>
 		<?php 
 			if ($_SESSION["hasAttempted"]) {
 				echo '<span id="error"> Invalid ID.</span>';
 			}
 		?>
 	</div>
+	<script src="func.js"></script>
 </body></html>

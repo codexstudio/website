@@ -21,13 +21,13 @@
 		<img id="imgCodex" src="codex.png">
 		<div id="loginBox">
 			<form action="validate.php" method="post">
-				<input class="textboxes" id="idInput" type="password" name="key" placeholder="ID"></input>
-				<input class="textboxes" id="secretInput" type="password" name="secret" placeholder="Secret"></input>
+				<input class="login-textboxes" id="idInput" type="password" value="<?php echo htmlspecialchars($_SESSION['key']); ?>" name="key" placeholder="ID"></input>
+				<input class="login-textboxes" id="secretInput" type="password" name="secret" placeholder="Secret"></input>
 				<input id="submit" type="submit" value="Login"></input>	
 			</form>
 			<?php 
 				if ($_SESSION["hasAttempted"]) {
-					echo '<span id="error"> Invalid ID.</span>';
+					echo '<br><span id="error" style="font-size:90%;color:lightgrey;font-family:Helvetica"> Invalid.</span>';
 				}
 			?>
 		</div>

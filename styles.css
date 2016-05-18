@@ -77,7 +77,7 @@ a {
 	background-color:white;
 	margin:0;
 }
-#homeBody a {
+.navBar-links {
 	font-family:'Helvetica';
 	color:white;
 	padding-right:15px;
@@ -95,7 +95,7 @@ a {
 #navBar {
 	position:absolute;
 	top:50%;
-	left:5%;
+	right:5%;
 	color:white;
 	cursor:default;
 	transform:translateY(-50%);
@@ -104,6 +104,6 @@ a {
 	position:absolute;
 	top:50%;
 	height:50px;
-	right:5%;
+	left:5%;
 	transform:translateY(-50%);
 }
